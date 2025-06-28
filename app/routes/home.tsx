@@ -1,12 +1,14 @@
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import React from "react";
+import About from "~/components/About";
 import Hero from "~/components/Hero";
 
 const home = () => {
   return (
-    <Stack component="main">
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Hero />
-    </Stack>
+      <About />
+    </Box>
   );
 };
 
