@@ -7,7 +7,7 @@ const clientLayout = () => {
   return (
     <div>
       <Header />
-      <Stack sx={{ pt: 10 }}>
+      <Stack sx={{ px: { xs: 2, sm: 3, md: 6, lg: 8 }, pt: 10 }}>
         <Outlet />
       </Stack>
     </div>
