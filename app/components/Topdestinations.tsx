@@ -49,7 +49,6 @@ const Topdestinations = () => {
           </Box>
         </Fade>
 
-        {/* FLEX LAYOUT */}
         <Box
           sx={{
             display: "flex",

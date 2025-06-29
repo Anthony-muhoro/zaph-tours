@@ -16,8 +16,15 @@ const About = () => {
   const theme = useTheme();
 
   return (
-    <Stack component="section" sx={{ py: 8, px: { xs: 2, md: 6 }, gap: 6 }}>
-      {/* Title */}
+    <Stack
+      component="section"
+      sx={{
+        py: 8,
+        px: { xs: 2, md: 6 },
+        gap: 6,
+        background: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)",
+      }}
+    >
       <Slide direction="left" in={true} timeout={600}>
         <Typography
           variant="h4"
