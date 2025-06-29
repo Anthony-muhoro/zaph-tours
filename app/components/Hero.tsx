@@ -21,7 +21,7 @@ const Hero = () => {
           "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(https://ruachsafaris.com/wp-content/uploads/2024/07/20200206-080357-largejpg-2-636x426.jpg)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: { md: "70vh", sm: "60vh" },
+        minHeight: { md: "80vh", sm: "70vh" },
         display: "flex",
         alignItems: "center",
         color: "white",
