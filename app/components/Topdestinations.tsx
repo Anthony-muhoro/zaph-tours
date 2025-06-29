@@ -2,9 +2,12 @@ import { Box, Button, Container, Fade, Slide, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router";
 import DestinationCard from "./DestinationCard";
-import { featuredDestinations } from "~/assets/data";
+import { useDestinations } from "~/context/Destination";
 
 const Topdestinations = () => {
+  const { destinations } = useDestinations();
+  const featuredDestinations = destinations.filter((d) => d.featured);
+
   return (
     <Box>
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
@@ -66,9 +69,9 @@ const Topdestinations = () => {
             >
               <Box sx={{ width: { xs: "100%", sm: "80%", md: "30%" } }}>
                 <DestinationCard
+                  id={destination.id}
                   name={destination.name}
-                  image={destination.image}
-                  price={destination.price}
+                  image={destination.images[0]}
                   description={destination.description}
                 />
               </Box>

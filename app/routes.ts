@@ -6,9 +6,6 @@ export default [
     route("/destinations", "pages/client/destinations.tsx"),
     route("/trips", "pages/client/trips.tsx"),
     route("/contacts", "pages/client/contact.tsx"),
-    route(
-      "/destinations/:destinationId",
-      "pages/client/destinationsdetails.tsx"
-    ),
+    route("/destinations/:id", "pages/client/destinationsdetails.tsx"),
   ]),
 ] satisfies RouteConfig;

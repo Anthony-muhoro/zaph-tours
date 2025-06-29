@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CardMedia,
@@ -9,18 +10,19 @@ import {
 } from "@mui/material";
 import { MapPin } from "lucide-react";
 import React from "react";
+import { Link } from "react-router";
 
 interface DestinationCardProps {
+  id: number | string;
   name: string;
   image: string;
-  price: number;
   description: string;
 }
 
 const DestinationCard: React.FC<DestinationCardProps> = ({
+  id,
   name,
   image,
-  price,
   description,
 }) => {
   return (
@@ -32,6 +34,9 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
         background: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)",
         border: "1px solid rgba(25,118,210,0.1)",
         overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
       }}
     >
       <Box sx={{ position: "relative", overflow: "hidden" }}>
@@ -51,13 +56,10 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
       <CardContent sx={{ p: 4 }}>
         <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
           <Stack
-            sx={{
-              width: "full",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              gap: 2,
-            }}
+            direction="row"
+            alignItems="center"
+            spacing={2}
+            sx={{ width: "100%" }}
           >
             <Icon component={MapPin} />
             <Typography
@@ -73,27 +75,33 @@ const DestinationCard: React.FC<DestinationCardProps> = ({
             </Typography>
           </Stack>
         </Box>
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: 700,
-            color: "secondary.main",
-            fontSize: { xs: "1.4rem", md: "1.6rem" },
-            mb: 2,
-          }}
-        >
-          KSH. {price}
-        </Typography>
+
         <Typography
           variant="body1"
           sx={{
             color: "text.secondary",
             lineHeight: 1.7,
             fontSize: { xs: "0.95rem", md: "1.1rem" },
+            mb: 3,
           }}
         >
           {description}
         </Typography>
+
+        <Button
+          component={Link}
+          to={`/destinations/${id}`}
+          variant="contained"
+          fullWidth
+          sx={{
+            textTransform: "none",
+            fontWeight: 600,
+            fontSize: "1rem",
+            borderRadius: 2,
+          }}
+        >
+          View Destination
+        </Button>
       </CardContent>
     </Card>
   );
