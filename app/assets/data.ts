@@ -59,7 +59,7 @@ export const destinations = [
     name: "Mt. Ruwenzori, Uganda",
     images: [
       "https://images.unsplash.com/photo-1544986581-efac024faf62?w=800",
-      "https://images.unsplash.com/photo-1603752745071-ef7ecdf77e04?w=800",
+      "https://images.unsplash.com/photo-1746704948438-f3e307e1833c?w=800",
     ],
     description:
       'Known as the "Mountains of the Moon", this UNESCO World Heritage site is perfect for trekkers and nature lovers looking for a unique alpine experience.',
@@ -128,7 +128,7 @@ export const destinations = [
     name: "Coastal Kenya, Diani",
     images: [
       "https://ruachsafaris.com/wp-content/uploads/2024/07/sarova-whitesands-beach-636x426.jpg",
-      "https://images.unsplash.com/photo-1570158268183-d296b2892211?w=800",
+      "https://images.unsplash.com/photo-1748182575169-e1e8e3901ec3?w=500",
     ],
     description:
       "Explore palm-fringed beaches, coral reefs, and Swahili culture along Kenya’s stunning coastlines in Diani, Watamu, and Mombasa.",
@@ -145,7 +145,7 @@ export const destinations = [
     id: 7,
     name: "Bwindi Impenetrable Forest, Uganda",
     images: [
-      "https://images.unsplash.com/photo-1627126758451-0fdd78f6a6d5?w=800",
+      "https://images.unsplash.com/photo-1748182575169-e1e8e3901ec3?w=500",
     ],
     description:
       "Home to endangered mountain gorillas, this lush forest offers unforgettable trekking experiences deep in nature.",
@@ -162,7 +162,7 @@ export const destinations = [
     id: 8,
     name: "Maasai Mara, Kenya",
     images: [
-      "https://images.unsplash.com/photo-1589308078051-774a2f633d9c?w=800",
+      "https://plus.unsplash.com/premium_photo-1661963218093-61a68278d7be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHphbnppYmFyfGVufDB8fDB8fHwwhttps://images.unsplash.com/photo-1746704948438-f3e307e1833c?w=800",
     ],
     description:
       "World-famous for the Great Migration, the Maasai Mara provides breathtaking safari encounters and rich Maasai culture.",
@@ -195,9 +195,7 @@ export const destinations = [
   {
     id: 10,
     name: "Hell's Gate National Park",
-    images: [
-      "https://images.unsplash.com/photo-1610647749387-21a759ce7c88?w=800",
-    ],
+    images: ["https://images.unsplash.com/photo-1586627161720-ee2849303aee"],
     description:
       "Ideal for hiking, cycling, and rock climbing, Hell’s Gate features towering cliffs and gorges that inspired ‘The Lion King’.",
     groupPrices: {
@@ -229,7 +227,9 @@ export const destinations = [
   {
     id: 12,
     name: "Rwenzori Mountains National Park",
-    images: ["https://images.unsplash.com/photo-1560963689-51b69870b89a?w=800"],
+    images: [
+      "https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa",
+    ],
     description:
       "A stunning mix of glaciers, waterfalls, and alpine meadows, this park offers some of the best high-altitude hikes in Africa.",
     groupPrices: {
@@ -245,7 +245,7 @@ export const destinations = [
     id: 13,
     name: "Serengeti National Park, Tanzania",
     images: [
-      "https://images.unsplash.com/photo-1572198098092-5c1f5ef35f4b?w=800",
+      "https://plus.unsplash.com/premium_photo-1661836503554-936aab49a7d4?w=500&auto=format",
     ],
     description:
       "A vast savannah full of lions, wildebeest, and more—this is the ultimate African safari experience, especially during migration season.",
