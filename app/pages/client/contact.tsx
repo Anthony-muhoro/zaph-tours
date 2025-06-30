@@ -56,7 +56,7 @@ const ContactPage = () => {
               <Stack spacing={1}>
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Mail size={18} />
-                  <Typography variant="body2">support@company.com</Typography>
+                  <Typography variant="body2">Zaphtours@support.com</Typography>
                 </Stack>
                 <Stack direction="row" spacing={1} alignItems="center">
                   <Phone size={18} />
@@ -64,9 +64,7 @@ const ContactPage = () => {
                 </Stack>
                 <Stack direction="row" spacing={1} alignItems="center">
                   <MapPin size={18} />
-                  <Typography variant="body2">
-                    Nairobi, Kenya – Westlands, Kenyatta Ave
-                  </Typography>
+                  <Typography variant="body2">Murang'a, Kenya</Typography>
                 </Stack>
               </Stack>
             </Box>
@@ -101,6 +99,14 @@ const ContactPage = () => {
                   <Linkedin size={20} />
                 </IconButton>
               </Stack>
+              <Box>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.009556217316!2d37.13520059495396!3d-0.7224033406717605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828a28207db7113%3A0xbc8b3625ac089be8!2sMurang&#39;a!5e0!3m2!1sen!2ske!4v1751287776976!5m2!1sen!2ske"
+                  width="600"
+                  height="450"
+                  loading="lazy"
+                ></iframe>
+              </Box>
             </Box>
           </Stack>
         </Stack>
