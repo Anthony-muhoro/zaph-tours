@@ -179,7 +179,7 @@ export const destinations = [
     id: 9,
     name: "Zanzibar, Tanzania",
     images: [
-      "https://images.unsplash.com/photo-1572188863115-0a88b575ba44?w=800",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/manda-bay-hotel-13-636x426.jpg",
     ],
     description:
       "An exotic island offering white-sand beaches, spice tours, and the ancient town of Stone Town full of culture and history.",
@@ -211,7 +211,7 @@ export const destinations = [
     id: 11,
     name: "Amboseli National Park",
     images: [
-      "https://images.unsplash.com/photo-1563720220508-6cf5f8e1897e?w=800",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/samburu-intrepids-luxury-2-636x426.jpg",
     ],
     description:
       "Famous for elephant herds and Mount Kilimanjaro views, Amboseli is a must-see park for nature lovers and photographers.",
@@ -229,6 +229,7 @@ export const destinations = [
     name: "Rwenzori Mountains National Park",
     images: [
       "https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/kilifi-bay-beach-resort-4-636x426.jpg",
     ],
     description:
       "A stunning mix of glaciers, waterfalls, and alpine meadows, this park offers some of the best high-altitude hikes in Africa.",
@@ -246,6 +247,7 @@ export const destinations = [
     name: "Serengeti National Park, Tanzania",
     images: [
       "https://plus.unsplash.com/premium_photo-1661836503554-936aab49a7d4?w=500&auto=format",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/kilifi-bay-beach-resort-4-636x426.jpg",
     ],
     description:
       "A vast savannah full of lions, wildebeest, and more—this is the ultimate African safari experience, especially during migration season.",
@@ -261,7 +263,10 @@ export const destinations = [
   {
     id: 14,
     name: "Ol Pejeta Conservancy, Kenya",
-    images: ["https://images.unsplash.com/photo-1549887534-55a41ba3fefb?w=800"],
+    images: [
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/kilifi-bay-beach-resort-4-636x426.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/pool-5-636x426.jpg",
+    ],
     description:
       "A conservation success story with the last two northern white rhinos, Ol Pejeta combines wildlife protection with luxury safari.",
     groupPrices: {
@@ -277,7 +282,7 @@ export const destinations = [
     id: 15,
     name: "Gorongosa National Park, Mozambique",
     images: [
-      "https://images.unsplash.com/photo-1627214365993-6b35f9a24314?w=800",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/pool-5-636x426.jpg",
     ],
     description:
       "A gem in central Mozambique, Gorongosa is being restored to its former glory with rich biodiversity and eco-tourism.",
@@ -294,7 +299,8 @@ export const destinations = [
     id: 16,
     name: "Simien Mountains National Park, Ethiopia",
     images: [
-      "https://images.unsplash.com/photo-1595886373611-58a0d3f9c226?w=800",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/tortilis-camp-19-636x408.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/lake-naivasha-country-636x426.jpg",
     ],
     description:
       "Dramatic peaks and deep valleys, home to the Gelada monkey and Walia ibex—great for hiking, camping, and rare wildlife.",
