@@ -314,3 +314,99 @@ export const destinations = [
     featured: false,
   },
 ];
+
+export const Trips = [
+  {
+    id: 1,
+    category: "honeymoon",
+    images: [
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/tortilis-camp-19-636x408.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/lake-naivasha-country-636x426.jpg",
+    ],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2500,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo, risus nec porttitor pretium, augue justo accumsan velit, sed cursus mi dolor non quam.",
+  },
+  {
+    id: 2,
+    category: "family",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 1800,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis, ex in viverra aliquet, tellus nulla vestibulum justo, sed tincidunt turpis arcu ut mauris.",
+  },
+  {
+    id: 3,
+    category: "adventure",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2700,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed urna nec augue pulvinar blandit. Integer tincidunt ligula at velit luctus, nec tincidunt enim efficitur.",
+  },
+  {
+    id: 4,
+    category: "cultural tours",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2200,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+  },
+  {
+    id: 5,
+    category: "wildlife safaris",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 3000,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis ac sapien vehicula cursus. Aliquam erat volutpat. Etiam porta sapien ac augue hendrerit iaculis.",
+  },
+  {
+    id: 6,
+    category: "eco-tours",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2000,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit, erat nec dapibus cursus, augue risus consectetur ex, a pretium turpis erat non magna.",
+  },
+  {
+    id: 7,
+    category: "luxury vacations",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 5000,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at diam eu magna fermentum bibendum. Nunc eleifend efficitur nulla, sed dictum sem feugiat nec.",
+  },
+  {
+    id: 8,
+    category: "beach holidays",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2100,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et tellus nec justo interdum hendrerit. Curabitur condimentum magna nec ligula bibendum, ac suscipit nunc efficitur.",
+  },
+  {
+    id: 9,
+    category: "wellness retreats",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2300,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt sapien sed nisl viverra, in vehicula felis ultrices. Donec gravida dignissim ante nec cursus.",
+  },
+  {
+    id: 10,
+    category: "culinary tours",
+    images: [],
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 2600,
+    detailed_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut elit nec nulla volutpat tristique. Cras in felis non risus dapibus hendrerit vitae sed justo.",
+  },
+];

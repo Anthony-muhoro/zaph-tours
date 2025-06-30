@@ -7,5 +7,6 @@ export default [
     route("/trips", "pages/client/trips.tsx"),
     route("/contacts", "pages/client/contact.tsx"),
     route("/destinations/:id", "pages/client/destinationsdetails.tsx"),
+    route("/trips/:id/blog", "pages/client/tripblog.tsx"),
   ]),
 ] satisfies RouteConfig;
