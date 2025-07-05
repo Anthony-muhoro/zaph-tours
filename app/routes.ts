@@ -11,9 +11,6 @@ export default [
   ]),
   route("/sign-up", "pages/client/Signup.tsx"),
   route("/sign-in", "pages/client/Signin.tsx"),
-  route("/api/reister", "actions/register.ts"),
-  route("/api/verify-email?/:token", "actions/verifyEmail.ts"),
-  route("/verify-email?/:token", "pages/client/verifyemail.tsx"),
   layout("layouts/clientDashboardLayout.tsx", [
     route("/dashboard", "pages/clientdashboard/dashboard.tsx"),
   ]),
