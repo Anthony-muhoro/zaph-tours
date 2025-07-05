@@ -320,6 +320,7 @@ export const Trips = [
     id: 1,
     category: "honeymoon",
     images: [
+      "https://cdn.pixabay.com/photo/2013/04/07/20/11/bride-101586_640.jpg",
       "https://ruachsafaris.com/wp-content/uploads/2024/07/tortilis-camp-19-636x408.jpg",
       "https://ruachsafaris.com/wp-content/uploads/2024/07/lake-naivasha-country-636x426.jpg",
     ],
@@ -331,7 +332,11 @@ export const Trips = [
   {
     id: 2,
     category: "family",
-    images: [],
+    images: [
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/img-636x426.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/the-cliff-lake-nakuru-636x426.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/life-with-the-elephants-636x426.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 1800,
     detailed_description:
@@ -340,7 +345,10 @@ export const Trips = [
   {
     id: 3,
     category: "adventure",
-    images: [],
+    images: [
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/kilifi-bay-beach-resort-4-636x426.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/pool-5-636x426.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2700,
     detailed_description:
@@ -349,7 +357,11 @@ export const Trips = [
   {
     id: 4,
     category: "cultural tours",
-    images: [],
+    images: [
+      "https://cdn.pixabay.com/photo/2021/10/31/19/35/tribe-6758620_640.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/the-cliff-lake-nakuru-636x426.jpg",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/life-with-the-elephants-636x426.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2200,
     detailed_description:
@@ -358,7 +370,10 @@ export const Trips = [
   {
     id: 5,
     category: "wildlife safaris",
-    images: [],
+    images: [
+      "https://images.unsplash.com/photo-1544986581-efac024faf62?w=800",
+      "https://images.unsplash.com/photo-1746704948438-f3e307e1833c?w=800",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 3000,
     detailed_description:
@@ -367,7 +382,9 @@ export const Trips = [
   {
     id: 6,
     category: "eco-tours",
-    images: [],
+    images: [
+      "https://cdn.pixabay.com/photo/2014/10/10/10/49/forest-483207_640.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2000,
     detailed_description:
@@ -376,7 +393,9 @@ export const Trips = [
   {
     id: 7,
     category: "luxury vacations",
-    images: [],
+    images: [
+      "https://cdn.pixabay.com/photo/2022/09/06/15/28/thai-7436935_640.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 5000,
     detailed_description:
@@ -385,7 +404,9 @@ export const Trips = [
   {
     id: 8,
     category: "beach holidays",
-    images: [],
+    images: [
+      "https://cdn.pixabay.com/photo/2019/05/09/20/56/vacation-4192123_640.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2100,
     detailed_description:
@@ -394,7 +415,9 @@ export const Trips = [
   {
     id: 9,
     category: "wellness retreats",
-    images: [],
+    images: [
+      "https://cdn.pixabay.com/photo/2020/08/06/07/49/woman-5467227_640.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2300,
     detailed_description:
@@ -403,7 +426,10 @@ export const Trips = [
   {
     id: 10,
     category: "culinary tours",
-    images: [],
+    images: [
+      "https://plus.unsplash.com/premium_photo-1661836503554-936aab49a7d4?w=500&auto=format",
+      "https://ruachsafaris.com/wp-content/uploads/2024/07/kilifi-bay-beach-resort-4-636x426.jpg",
+    ],
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: 2600,
     detailed_description:

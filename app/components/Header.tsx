@@ -30,7 +30,7 @@ const Header = () => {
     { label: "Contacts", path: "/contacts" },
   ];
 
-  const cta = { label: "Login / Signup", path: "/sign-up" };
+  const cta = { label: "Login / Signup", path: "/" };
 
   const toggleDrawer = () => setDrawerOpen(!drawerOpen);
   const isActivePath = (path: string) => location.pathname === path;

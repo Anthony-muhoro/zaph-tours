@@ -6,6 +6,7 @@ import {
   TextField,
   Typography,
   IconButton,
+  useTheme,
 } from "@mui/material";
 import {
   Mail,
@@ -17,40 +18,36 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import { theme } from "~/context/Themes";
 
 const ContactPage = () => {
+  const theme = useTheme();
+
   return (
-    <Box py={8} px={2} bgcolor={theme.palette.secondary.main}>
+    <Box py={10} px={2} bgcolor="background.default">
       <Container maxWidth="lg">
-        <Typography variant="h4" fontWeight={700} textAlign="center" mb={4}>
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          textAlign="center"
+          mb={8}
+          color="text.primary"
+        >
           Contact Us
         </Typography>
 
         <Stack
           direction={{ xs: "column", md: "row" }}
-          spacing={6}
-          justifyContent="space-between"
-          mb={8}
+          spacing={8}
+          alignItems="flex-start"
         >
-          <Box flex={1}>
-            <Typography variant="h6" fontWeight={600} mb={2}>
-              Send us a message
-            </Typography>
-            <Stack spacing={2} color={theme.palette.primary.dark}>
-              <TextField label="Name" fullWidth />
-              <TextField label="Email" type="email" fullWidth />
-              <TextField label="Subject" fullWidth />
-              <TextField label="Message" multiline rows={4} fullWidth />
-              <Button variant="contained" sx={{ width: "fit-content" }}>
-                Send Message
-              </Button>
-            </Stack>
-          </Box>
-
           <Stack flex={1} spacing={4}>
             <Box>
-              <Typography variant="h6" fontWeight={600} mb={1}>
+              <Typography
+                variant="h6"
+                fontWeight={600}
+                mb={2}
+                color="text.primary"
+              >
                 Contact Information
               </Typography>
               <Stack spacing={1}>
@@ -70,7 +67,12 @@ const ContactPage = () => {
             </Box>
 
             <Box>
-              <Typography variant="h6" fontWeight={600} mb={1}>
+              <Typography
+                variant="h6"
+                fontWeight={600}
+                mb={2}
+                color="text.primary"
+              >
                 Office Hours
               </Typography>
               <Stack direction="row" spacing={1} alignItems="center">
@@ -82,33 +84,84 @@ const ContactPage = () => {
             </Box>
 
             <Box>
-              <Typography variant="h6" fontWeight={600} mb={1}>
+              <Typography
+                variant="h6"
+                fontWeight={600}
+                mb={2}
+                color="text.primary"
+              >
                 Follow Us
               </Typography>
               <Stack direction="row" spacing={1}>
-                <IconButton color="inherit">
+                <IconButton color="primary">
                   <Facebook size={20} />
                 </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="primary">
                   <Twitter size={20} />
                 </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="primary">
                   <Instagram size={20} />
                 </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="primary">
                   <Linkedin size={20} />
                 </IconButton>
               </Stack>
-              <Box>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31916.009556217316!2d37.13520059495396!3d-0.7224033406717605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828a28207db7113%3A0xbc8b3625ac089be8!2sMurang&#39;a!5e0!3m2!1sen!2ske!4v1751287776976!5m2!1sen!2ske"
-                  width="600"
-                  height="450"
-                  loading="lazy"
-                ></iframe>
-              </Box>
+            </Box>
+
+            <Box
+              sx={{
+                borderRadius: 2,
+                overflow: "hidden",
+                boxShadow: 2,
+                mt: 2,
+              }}
+            >
+              <Box
+                component="iframe"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1331.3365347603183!2d37.15903169518851!3d-0.721376096510206!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1828a28207db7113%3A0xbc8b3625ac089be8!2sMurang&#39;a!5e0!3m2!1sen!2ske!4v1751721498453!5m2!1sen!2ske"
+                width="100%"
+                height="250"
+                loading="lazy"
+                style={{ border: 0 }}
+              />
             </Box>
           </Stack>
+
+          <Box flex={1}>
+            <Typography
+              variant="h6"
+              fontWeight={600}
+              mb={3}
+              color="text.primary"
+            >
+              Send us a message
+            </Typography>
+            <Stack spacing={3}>
+              <TextField label="Name" variant="outlined" fullWidth />
+              <TextField
+                label="Email"
+                type="email"
+                variant="outlined"
+                fullWidth
+              />
+              <TextField label="Subject" variant="outlined" fullWidth />
+              <TextField
+                label="Message"
+                multiline
+                rows={4}
+                variant="outlined"
+                fullWidth
+              />
+              <Button
+                variant="contained"
+                size="large"
+                sx={{ alignSelf: "flex-start" }}
+                fullWidth
+              >
+                Send Message
+              </Button>
+            </Stack>
+          </Box>
         </Stack>
       </Container>
     </Box>

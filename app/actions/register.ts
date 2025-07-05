@@ -29,9 +29,8 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       },
     });
 
-    // 🚀 Send email
     const transporter = nodemailer.createTransport({
-      service: "gmail", // or use SMTP
+      service: "gmail",
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,

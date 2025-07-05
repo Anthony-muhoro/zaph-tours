@@ -44,11 +44,7 @@ const Tripcard: React.FC<TripcardProps> = ({ trip }) => {
         <CardMedia
           component="img"
           height="280"
-          image={
-            images.length > 0
-              ? images[0]
-              : "https://via.placeholder.com/636x408?text=Trip+Image"
-          }
+          image={images[0]}
           alt={category}
           sx={{
             transition: "transform 0.3s ease",

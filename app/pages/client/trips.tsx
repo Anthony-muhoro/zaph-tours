@@ -1,22 +1,39 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import Tripcard from "~/components/Tripcard";
 import { Trips } from "~/assets/data";
 
 const TripsPage = () => {
   return (
     <Box sx={{ py: 5, px: { xs: 2, md: 6 } }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom textAlign="center">
         Explore Our Trips
       </Typography>
 
-      <Grid container spacing={4}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: 4,
+        }}
+      >
         {Trips.map((trip) => (
-          <Grid item xs={12} sm={6} md={4} key={trip.id}>
+          <Box
+            key={trip.id}
+            sx={{
+              width: {
+                xs: "100%",
+                sm: "48%",
+                md: "30%",
+              },
+            }}
+          >
             <Tripcard trip={trip} />
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 };

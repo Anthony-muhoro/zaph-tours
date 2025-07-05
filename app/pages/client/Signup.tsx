@@ -1,4 +1,12 @@
-import { Box, Button, Stack, TextField, Collapse, Alert } from "@mui/material";
+import {
+  Box,
+  Button,
+  Stack,
+  TextField,
+  Collapse,
+  Alert,
+  Grid,
+} from "@mui/material";
 import { useMutation } from "@tanstack/react-query";
 import React, { useState } from "react";
 import axios from "axios";
@@ -29,7 +37,6 @@ const Signup = () => {
     onSuccess: (data) => {
       setSuccessmesg(data.message);
       setErrormsg("");
-      setTimeout(() => navigate("/sign-in"), 3000);
     },
     onError: (error: any) => {
       const message = error?.response?.data?.message;
@@ -57,52 +64,55 @@ const Signup = () => {
   return (
     <Box sx={{ width: 300, margin: "auto", padding: 4 }}>
       <Stack spacing={2}>
-        <Collapse in={!!successmsg}>
-          <Alert severity="success" onClose={() => setSuccessmesg("")}>
-            {successmsg}
-          </Alert>
-        </Collapse>
+        <Grid>
+          <Collapse in={!!successmsg}>
+            <Alert severity="success" onClose={() => setSuccessmesg("")}>
+              {successmsg}
+            </Alert>
+          </Collapse>
 
-        <Collapse in={!!errormsg}>
-          <Alert severity="error" onClose={() => setErrormsg("")}>
-            {errormsg}
-          </Alert>
-        </Collapse>
+          <Collapse in={!!errormsg}>
+            <Alert severity="error" onClose={() => setErrormsg("")}>
+              {errormsg}
+            </Alert>
+          </Collapse>
 
-        <TextField
-          placeholder="First Name"
-          value={firstName}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <TextField
-          placeholder="Last Name"
-          value={lastName}
-          onChange={(e) => setLastName(e.target.value)}
-        />
-        <TextField
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          placeholder="Password"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <TextField
-          placeholder="Confirm Password"
-          type="password"
-          value={confPass}
-          onChange={(e) => setConfPass(e.target.value)}
-        />
-        <Button
-          variant="contained"
-          onClick={handleSignup}
-          disabled={signupMutation.isPending}
-        >
-          {signupMutation.isPending ? "Signing up..." : "Signup"}
-        </Button>
+          <TextField
+            placeholder="First Name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            fullWidth
+          />
+          <TextField
+            placeholder="Last Name"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+          <TextField
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <TextField
+            placeholder="Password"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <TextField
+            placeholder="Confirm Password"
+            type="password"
+            value={confPass}
+            onChange={(e) => setConfPass(e.target.value)}
+          />
+          <Button
+            variant="contained"
+            onClick={handleSignup}
+            disabled={signupMutation.isPending}
+          >
+            {signupMutation.isPending ? "Signing up..." : "Signup"}
+          </Button>
+        </Grid>
       </Stack>
     </Box>
   );
